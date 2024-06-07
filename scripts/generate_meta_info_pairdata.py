@@ -27,13 +27,13 @@ if __name__ == '__main__':
     parser.add_argument(
         '--input',
         nargs='+',
-        default=['datasets/DF2K/DIV2K_train_HR_sub', 'datasets/DF2K/DIV2K_train_LR_bicubic_X4_sub'],
+        default=['datasets/sourcebook/sourcebook_hr', 'datasets/sourcebook/sourcebook_lr'],
         help='Input folder, should be [gt_folder, lq_folder]')
     parser.add_argument('--root', nargs='+', default=[None, None], help='Folder root, will use the ')
     parser.add_argument(
         '--meta_info',
         type=str,
-        default='datasets/DF2K/meta_info/meta_info_DIV2K_sub_pair.txt',
+        default='datasets/meta_info/pair_meta_info2.txt',
         help='txt path for meta info')
     args = parser.parse_args()
 
